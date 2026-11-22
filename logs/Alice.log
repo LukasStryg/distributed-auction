@@ -1,0 +1,12 @@
+2026/11/22 13:11:14.125819 client: Alice bids 100 (seq 1) at node 0
+2026/11/22 13:11:14.169378 client: Alice got SUCCESS for bid 100
+2026/11/22 13:11:18.137170 client: Alice asks node 0 for the result
+2026/11/22 13:11:18.140641 client: Alice got result: highest bid is 150 by Bob
+2026/11/22 13:11:36.148799 client: Alice bids 200 (seq 2) at node 0
+2026/11/22 13:11:36.282356 client: Alice got SUCCESS for bid 200
+2026/11/22 13:11:41.158902 client: Alice asks node 0 for the result
+2026/11/22 13:11:41.161634 client: Alice got result: highest bid is 300 by Bob
+2026/11/22 13:13:01.170321 client: Alice bids 500 (seq 3) at node 0
+2026/11/22 13:13:01.174605 client: Alice got FAIL for bid 500
+2026/11/22 13:13:01.174705 client: Alice asks node 0 for the result
+2026/11/22 13:13:01.175978 client: Alice got result: auction is over, Bob won with 300

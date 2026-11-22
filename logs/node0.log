@@ -1,0 +1,23 @@
+2026/11/22 13:11:10.374039 node 0: listening on localhost:5000
+2026/11/22 13:11:11.150850 node 0: got coordinator from node 2, it is the primary (highest 0 by )
+2026/11/22 13:11:14.151711 node 0: forwarding bid 100 from Alice (seq 1) to primary 2
+2026/11/22 13:11:14.167578 node 0: got update from primary 2 (highest 100 by Alice)
+2026/11/22 13:11:16.157511 node 0: got update from primary 2 (highest 100 by Alice)
+2026/11/22 13:11:16.159769 node 0: got update from primary 2 (highest 150 by Bob)
+2026/11/22 13:11:18.138476 node 0: forwarding result to primary 2
+2026/11/22 13:11:36.150275 node 0: forwarding bid 200 from Alice (seq 2) to primary 2
+2026/11/22 13:11:36.152542 node 0: primary 2 did not answer: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:5002: connect: connection refused"
+2026/11/22 13:11:36.152652 node 0: calling election
+2026/11/22 13:11:36.178343 node 0: got answer from node 1
+2026/11/22 13:11:36.217105 node 0: got coordinator from node 1, it is the primary (highest 150 by Bob)
+2026/11/22 13:11:36.279646 node 0: forwarding bid 200 from Alice (seq 2) to primary 1
+2026/11/22 13:11:36.281214 node 0: got update from primary 1 (highest 200 by Alice)
+2026/11/22 13:11:40.170129 node 0: forwarding bid 300 from Bob (seq 3) to primary 1
+2026/11/22 13:11:40.171558 node 0: got update from primary 1 (highest 300 by Bob)
+2026/11/22 13:11:40.173156 node 0: forwarding bid 250 from Bob (seq 4) to primary 1
+2026/11/22 13:11:40.174021 node 0: got update from primary 1 (highest 300 by Bob)
+2026/11/22 13:11:41.159987 node 0: forwarding result to primary 1
+2026/11/22 13:13:00.161353 node 0: forwarding result to primary 1
+2026/11/22 13:13:01.171664 node 0: forwarding bid 500 from Alice (seq 3) to primary 1
+2026/11/22 13:13:01.173466 node 0: got update from primary 1 (highest 300 by Bob)
+2026/11/22 13:13:01.175081 node 0: forwarding result to primary 1

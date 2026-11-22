@@ -1,0 +1,15 @@
+2026/11/22 13:11:11.118906 node 2: auction started, it ends at 13:12:51
+2026/11/22 13:11:11.121723 node 2: listening on localhost:5002
+2026/11/22 13:11:11.151366 node 2: ack from node 0
+2026/11/22 13:11:11.169928 node 2: ack from node 1
+2026/11/22 13:11:14.166465 node 2: registered bidder Alice
+2026/11/22 13:11:14.166586 node 2: bid 100 from Alice is the highest bid
+2026/11/22 13:11:14.167899 node 2: ack from node 1
+2026/11/22 13:11:14.167936 node 2: ack from node 0
+2026/11/22 13:11:16.156576 node 2: registered bidder Bob
+2026/11/22 13:11:16.156720 node 2: bid 50 from Bob failed, highest bid is 100
+2026/11/22 13:11:16.157871 node 2: ack from node 0
+2026/11/22 13:11:16.158000 node 2: ack from node 1
+2026/11/22 13:11:16.159270 node 2: bid 150 from Bob is the highest bid
+2026/11/22 13:11:16.160051 node 2: ack from node 1
+2026/11/22 13:11:16.160061 node 2: ack from node 0

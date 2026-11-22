@@ -1,0 +1,14 @@
+2026/11/22 13:11:16.127378 client: Bob bids 50 (seq 1) at node 2
+2026/11/22 13:11:16.158703 client: Bob got FAIL for bid 50
+2026/11/22 13:11:16.158806 client: Bob bids 150 (seq 2) at node 2
+2026/11/22 13:11:16.160460 client: Bob got SUCCESS for bid 150
+2026/11/22 13:11:22.139218 client: Bob asks node 2 for the result
+2026/11/22 13:11:22.141061 client: Bob got result: highest bid is 150 by Bob
+2026/11/22 13:11:40.148066 client: Bob bids 300 (seq 3) at node 2
+2026/11/22 13:11:40.150359 client: Bob got no answer from node 2: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:5002: connect: connection refused"
+2026/11/22 13:11:40.150514 client: Bob bids 300 (seq 3) at node 0
+2026/11/22 13:11:40.172657 client: Bob got SUCCESS for bid 300
+2026/11/22 13:11:40.172759 client: Bob bids 250 (seq 4) at node 0
+2026/11/22 13:11:40.174782 client: Bob got FAIL for bid 250
+2026/11/22 13:13:00.160032 client: Bob asks node 0 for the result
+2026/11/22 13:13:00.162879 client: Bob got result: auction is over, Bob won with 300

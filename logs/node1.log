@@ -1,0 +1,18 @@
+2026/11/22 13:11:10.374039 node 1: listening on localhost:5001
+2026/11/22 13:11:11.169540 node 1: got coordinator from node 2, it is the primary (highest 0 by )
+2026/11/22 13:11:14.167578 node 1: got update from primary 2 (highest 100 by Alice)
+2026/11/22 13:11:16.157510 node 1: got update from primary 2 (highest 100 by Alice)
+2026/11/22 13:11:16.159770 node 1: got update from primary 2 (highest 150 by Bob)
+2026/11/22 13:11:36.177726 node 1: got election from node 0, sending answer
+2026/11/22 13:11:36.177949 node 1: calling election
+2026/11/22 13:11:36.194022 node 1: no answer, sending coordinator to all
+2026/11/22 13:11:36.194341 node 1: no ack from node 2, it has crashed
+2026/11/22 13:11:36.217547 node 1: ack from node 0
+2026/11/22 13:11:36.280571 node 1: bid 200 from Alice is the highest bid
+2026/11/22 13:11:36.281594 node 1: ack from node 0
+2026/11/22 13:11:40.170908 node 1: bid 300 from Bob is the highest bid
+2026/11/22 13:11:40.171911 node 1: ack from node 0
+2026/11/22 13:11:40.173572 node 1: bid 250 from Bob failed, highest bid is 300
+2026/11/22 13:11:40.174285 node 1: ack from node 0
+2026/11/22 13:13:01.172587 node 1: bid 500 from Alice failed, auction is over
+2026/11/22 13:13:01.173861 node 1: ack from node 0

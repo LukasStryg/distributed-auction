@@ -1,0 +1,59 @@
+syntax = "proto3";
+package auction;
+option go_package = "auction/grpc";
+
+service Auction {
+    // client api, any node
+    rpc Bid (BidRequest) returns (Ack);
+    rpc Result (Empty) returns (ResultReply);
+
+    // primary to backups
+    rpc Update (State) returns (Empty);
+
+    // bully election
+    rpc Election (ElectionRequest) returns (Empty);
+    rpc Coordinator (State) returns (Empty);
+}
+
+enum Outcome {
+    FAIL = 0;
+    SUCCESS = 1;
+    EXCEPTION = 2;
+}
+
+message Empty {}
+
+// bidder and seq is the unique id of the request
+message BidRequest {
+    string bidder = 1;
+    int64 amount = 2;
+    int64 seq = 3;
+}
+
+message Ack {
+    Outcome outcome = 1;
+}
+
+message ResultReply {
+    bool over = 1;
+    string winner = 2;
+    int64 amount = 3;
+}
+
+message ElectionRequest {
+    int32 id = 1;
+}
+
+// last request and response of a bidder
+message Bidder {
+    int64 seq = 1;
+    Outcome outcome = 2;
+}
+
+message State {
+    int32 primary = 1;
+    int64 deadline = 2; // unix ms
+    string winner = 3;
+    int64 highest = 4;
+    map<string, Bidder> bidders = 5;
+}
